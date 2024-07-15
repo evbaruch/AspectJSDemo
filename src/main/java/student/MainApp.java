@@ -3,7 +3,7 @@ package student;
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;
 public class MainApp {
-	private static WeldContainer container = new Weld().initialize();
+	private static WeldContainer container = new Weld().initialize(); //for injection
     public static void main(String[] args) {
         Student student = container.select(Student.class).get();
 //        Pet pet = new Dog();
